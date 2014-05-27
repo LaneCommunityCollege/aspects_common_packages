@@ -25,3 +25,8 @@ aspects_common_packages:
     state: "default"
     Debian: vim
     RedHat: vim
+  java:
+    state: "default"
+    Debian: java-common
+    RedHat: java-1.7.0-openjdk
+
