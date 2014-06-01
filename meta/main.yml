@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: David Reagan
-  description: Simple role that lets you install applications across more than one OS. See the defaults/main.yml file for which packages are currently supported.
+  description: Use so that you don't have to write an install task per package manager every time you need to install a package.
   company: Lane Community College
   license: MIT
   min_ansible_version: 1.6
