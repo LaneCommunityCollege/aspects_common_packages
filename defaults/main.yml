@@ -29,4 +29,17 @@ aspects_common_packages:
     state: "default"
     Debian: java-common
     RedHat: java-1.7.0-openjdk
+  phpcommon:
+    state: "default"
+    Debian: "php5-common"
+    RedHat: "php-common"
+  phpapachemodule:
+    state: "default"
+    Debian: "libapache2-mod-php5"
+    # CentOS 6.5 installs libphp5.so by default
+    RedHat: "httpd"
+  phpcli:
+    state: "default"
+    Debian: "php5-cli"
+    RedHat: "php-cli"
 
