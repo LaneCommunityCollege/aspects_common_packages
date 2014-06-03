@@ -1,8 +1,5 @@
 ---
 # tasks file for aspects_common_packages
-- name: debug this.
-  debug: var=item
-  with_dict: aspects_common_packages
 
 - name: Set default packages state with apt
   when: ansible_os_family == "Debian" and item.value.state != 'default' and item.value.Debian is defined
