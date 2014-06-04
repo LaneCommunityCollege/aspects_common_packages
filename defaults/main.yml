@@ -52,7 +52,7 @@ aspects_common_packages:
     Debian: php5-gd
   php_extension_imagick:
     state: "default"
-    RedHat: 0 # install via pecl
+#    RedHat: 0 # install via pecl
     Debian: php5-imagick
   php_extension_ldap:
     state: "default"
@@ -60,7 +60,7 @@ aspects_common_packages:
     Debian: php5-ldap
   php_extension_mcrypt:
     state: "default"
-    RedHat: 0 # Not sure how to get this on centos 6.5
+#    RedHat: 0 # Not sure how to get this on centos 6.5
     Debian: php5-mcrypt
   php_extension_mysql:
      state: "default"
@@ -72,7 +72,7 @@ aspects_common_packages:
     Debian: php-apc
   php_extension_crypt_blowfish:
     state: "default"
-    RedHat: 0 # Not sure how to get this on centos 6.5
+#    RedHat: 0 # Not sure how to get this on centos 6.5
     Debian: php-crypt-blowfish
   php_extension_pear:
     state: "default"
@@ -80,9 +80,8 @@ aspects_common_packages:
     Debian: php-pear
   php_extension_dev:
     state: "default"
-    RedHat: 0 # Not sure how to get this on centos 6.5
+#    RedHat: 0 # Not sure how to get this on centos 6.5
     Debian: php5-dev
   python_apt:
     state: "default"
-    RedHat: 0 # apt does not exist on RedHat...
     Debian: python-apt
