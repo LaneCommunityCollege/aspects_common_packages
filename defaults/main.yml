@@ -25,9 +25,9 @@ aspects_common_packages:
     state: "default"
     Debian: vim
     RedHat: vim
-  java:
+  javajre:
     state: "default"
-    Debian: java-common
+    Debian: default-jre-headless
     RedHat: java-1.7.0-openjdk
   phpcommon:
     state: "default"
@@ -42,4 +42,47 @@ aspects_common_packages:
     state: "default"
     Debian: "php5-cli"
     RedHat: "php-cli"
-
+  php_extension_curl:
+    state: "default"
+    RedHat: php-common
+    Debian: php5-curl
+  php_extension_gd:
+    state: "default"
+    RedHat: php-gd
+    Debian: php5-gd
+  php_extension_imagick:
+    state: "default"
+    RedHat: 0 # install via pecl
+    Debian: php5-imagick
+  php_extension_ldap:
+    state: "default"
+    RedHat: php-ldap
+    Debian: php5-ldap
+  php_extension_mcrypt:
+    state: "default"
+    RedHat: 0 # Not sure how to get this on centos 6.5
+    Debian: php5-mcrypt
+  php_extension_mysql:
+     state: "default"
+     RedHat: php-mysql
+     Debian: php5-mysql
+  php_extension_apc:
+    state: "default"
+    RedHat: php-pecl-apc
+    Debian: php-apc
+  php_extension_crypt_blowfish:
+    state: "default"
+    RedHat: 0 # Not sure how to get this on centos 6.5
+    Debian: php-crypt-blowfish
+  php_extension_pear:
+    state: "default"
+    RedHat: php-pear
+    Debian: php-pear
+  php_extension_dev:
+    state: "default"
+    RedHat: 0 # Not sure how to get this on centos 6.5
+    Debian: php5-dev
+  python_apt:
+    state: "default"
+    RedHat: 0 # apt does not exist on RedHat...
+    Debian: python-apt
