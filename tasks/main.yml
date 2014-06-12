@@ -1,12 +1,17 @@
 ---
 # tasks file for aspects_common_packages
 
-- name: Set default packages state with apt
+- name: Debian - Set default packages state with apt
   when: ansible_os_family == "Debian" and item.value.state != 'default' and item.value.Debian is defined
   apt: pkg={{ item.value.Debian }} state={{ item.value.state }}
   with_dict: aspects_common_packages
 
-- name: Set default packages state with yum
+- name: RedHat - Set default packages state with yum
   when: ansible_os_family == "RedHat" and item.value.state != 'default' and item.value.RedHat is defined
   yum: pkg={{ item.value.RedHat }} state={{ item.value.state }}
+  with_dict: aspects_common_packages
+
+- name: Suse - Set default packages state with Zypper
+  when: ansible_os_family == "Suse" and item.value.state != 'default' and item.value.Suse is defined
+  zypper: name={{ item.value.Suse }} state={{ item.value.state }}
   with_dict: aspects_common_packages
