@@ -5,79 +5,99 @@ aspects_common_packages:
     state: "default"
     Debian: ssh
     RedHat: ssh
+    Suse: openssh
   locate:
     state: "default"
     Debian: locate
     RedHat: mlocate
+    Suse: findutils-locate
   git:
     state: "default"
     Debian: git
     RedHat: git
+#    Suse:
   facter:
     state: "default"
     Debian: facter
     RedHat: facter
+    Suse: facter
   htop:
     state: "default"
     Debian: htop
     RedHat: false
+#    Suse:
   vim:
     state: "default"
     Debian: vim
     RedHat: vim
+    Suse: vim
   javajre:
     state: "default"
     Debian: default-jre-headless
     RedHat: java-1.7.0-openjdk
+# SLES does not have openjdk, which means it's different from the others. So leaving commented out for now.
+#    Suse: java-1_7_0-ibm
   phpcommon:
     state: "default"
     Debian: "php5-common"
     RedHat: "php-common"
+    Suse: "php53"
   phpapachemodule:
     state: "default"
     Debian: "libapache2-mod-php5"
     # CentOS 6.5 installs libphp5.so by default
     RedHat: "httpd"
+    Suse: apache2-mod_php53
   phpcli:
     state: "default"
-    Debian: "php5-cli"
-    RedHat: "php-cli"
+    Debian: php5-cli
+    RedHat: php-cli
+#    Suse:
   php_extension_curl:
     state: "default"
     RedHat: php-common
     Debian: php5-curl
+    Suse: php53-curl
   php_extension_gd:
     state: "default"
     RedHat: php-gd
     Debian: php5-gd
+    Suse: php53-gd
   php_extension_imagick:
     state: "default"
 #    RedHat: 0 # install via pecl
     Debian: php5-imagick
+#    Suse:
   php_extension_ldap:
     state: "default"
     RedHat: php-ldap
     Debian: php5-ldap
+    Suse: php53-ldap
   php_extension_mcrypt:
     state: "default"
 #    RedHat: 0 # Not sure how to get this on centos 6.5
     Debian: php5-mcrypt
+    Suse: php53-mcrypt
   php_extension_mysql:
      state: "default"
      RedHat: php-mysql
      Debian: php5-mysql
+     Suse: php53-mysql
   php_extension_apc:
     state: "default"
     RedHat: php-pecl-apc
     Debian: php-apc
+#    Suse:
   php_extension_crypt_blowfish:
     state: "default"
 #    RedHat: 0 # Not sure how to get this on centos 6.5
     Debian: php-crypt-blowfish
+#    Suse:
   php_extension_pear:
     state: "default"
     RedHat: php-pear
     Debian: php-pear
+    Suse: php53-pear
   php_extension_dev:
     state: "default"
 #    RedHat: 0 # Not sure how to get this on centos 6.5
