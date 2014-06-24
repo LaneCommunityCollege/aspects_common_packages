@@ -1,7 +1,7 @@
 ---
 # defaults file for aspects_common_packages
 aspects_common_packages:
-  ssh:
+  openssh:
     state: "default"
     Debian: ssh
     RedHat: ssh
@@ -11,6 +11,10 @@ aspects_common_packages:
     Debian: locate
     RedHat: mlocate
     Suse: findutils-locate
+  logwatch:
+    state: "default"
+    Debian: logwatch
+    RedHat: logwatch
   git:
     state: "default"
     Debian: git
@@ -31,7 +35,7 @@ aspects_common_packages:
     Debian: vim
     RedHat: vim
     Suse: vim
-  javajre:
+  openjdk:
     state: "default"
     Debian: default-jre-headless
     RedHat: java-1.7.0-openjdk
