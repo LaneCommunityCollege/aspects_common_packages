@@ -4,7 +4,7 @@ aspects_common_packages:
   openssh:
     state: "default"
     Debian: ssh
-    RedHat: ssh
+    RedHat: openssh-server
     Suse: openssh
   locate:
     state: "default"
