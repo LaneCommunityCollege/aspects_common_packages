@@ -23,12 +23,12 @@ aspects_common_packages:
   facter:
     state: "default"
     Debian: facter
-    RedHat: facter
+#    RedHat: "facter"
     Suse: facter
   htop:
     state: "default"
     Debian: htop
-    RedHat: false
+#    RedHat: false
 #    Suse:
   vim:
     state: "default"
@@ -113,3 +113,9 @@ aspects_common_packages:
     state: "default"
     Debian: "ntp"
     RedHat: "ntp"
+    Suse: "ntp"
+  postfix:
+    state: "default"
+    Debian: "postfix"
+    RedHat: "postfix"
+    Suse: "postfix"

@@ -15,7 +15,7 @@
 
 - name: RedHat - Set default packages state with yum
   when: ansible_os_family == "RedHat" and item.value.state != 'default' and item.value.RedHat is defined
-  yum: pkg={{ item.value.RedHat }} state={{ item.value.state }}
+  yum: name={{ item.value.RedHat }} state={{ item.value.state }}
   with_dict: aspects_common_packages
   tags:
     - aspects_common_packages
