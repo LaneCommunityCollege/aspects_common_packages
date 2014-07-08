@@ -119,3 +119,9 @@ aspects_common_packages:
     Debian: "postfix"
     RedHat: "postfix"
     Suse: "postfix"
+  rpcbind:
+    state: "default"
+    Debian: "rpcbind"
+  nfscommon:
+    state: "default"
+    Debian: "nfs-common"
