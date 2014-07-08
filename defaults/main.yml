@@ -122,6 +122,8 @@ aspects_common_packages:
   rpcbind:
     state: "default"
     Debian: "rpcbind"
+    RedHat: "rpcbind"
   nfscommon:
     state: "default"
     Debian: "nfs-common"
+    RedHat: "nfs-utils"
