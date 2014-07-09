@@ -127,3 +127,63 @@ aspects_common_packages:
     state: "default"
     Debian: "nfs-common"
     RedHat: "nfs-utils"
+  accountsservice:
+    state: "default"
+    Debian: "accountsservice"
+  apport:
+    state: "default"
+    Debian: "apport"
+  apport-symptoms:
+    state: "default"
+    Debian: "apport-symptoms"
+  ftp:
+    state: "default"
+    Debian: "ftp"
+  landscape-common:
+    state: "default"
+    Debian: "landscape-common"
+  laptopdetect:
+    state: "default"
+    Debian: "laptop-detect"
+  mtrtiny:
+    state: "default"
+    Debian: "mtr-tiny"
+  popularity-contest:
+    state: "default"
+    Debian: "popularity-contest"
+  powermgmt-base:
+    state: "default"
+    Debian: "powermgmt-base"
+  ppp:
+    state: "default"
+    Debian: "ppp"
+  pppconfig:
+    state: "default"
+    Debian: "pppconfig"
+  pppoeconf:
+    state: "default"
+    Debian: "pppoeconf"
+  tasksel:
+    state: "default"
+    Debian: "tasksel"
+  tasksel-data:
+    state: "default"
+    Debian: "tasksel-data"
+  wireless-tools:
+    state: "default"
+    Debian: "wireless-tools"
+  wpasupplicant:
+    state: "default"
+    Debian: "wpasupplicant"
+  python3apport:
+    state: "default"
+    Debian: "python3-apport"
+  libselinuxpython:
+    state: "default"
+    RedHat: "libselinux-python"
+  redisserver:
+    state: "default"
+    Debian: "redis-server"
+  redistools:
+    state: "default"
+    Debian: "redis-tools"
