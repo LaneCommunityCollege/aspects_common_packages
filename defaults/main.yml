@@ -123,10 +123,12 @@ aspects_common_packages:
     state: "default"
     Debian: "rpcbind"
     RedHat: "rpcbind"
+    Suse: "rpcbind"
   nfscommon:
     state: "default"
     Debian: "nfs-common"
     RedHat: "nfs-utils"
+    Suse: "nfs-client"
   accountsservice:
     state: "default"
     Debian: "accountsservice"
@@ -187,3 +189,13 @@ aspects_common_packages:
   redistools:
     state: "default"
     Debian: "redis-tools"
+  snmpd:
+    state: "default"
+    Debian: "snmpd"
+    RedHat: "net-snmp"
+    Suse: "net-snmp"
+  snmpmibs:
+    state: "default"
+    Debian: "snmp-mibs-downloader"
+    RedHat: "net-snmp-libs"
+    Suse: "snmp-mibs"
