@@ -199,6 +199,9 @@ aspects_common_packages:
     Debian: "snmp-mibs-downloader"
     RedHat: "net-snmp-libs"
     Suse: "snmp-mibs"
+  snmpddevel:
+    state: "default"
+    RedHat: "net-snmp-devel"
   pythonmysqldb:
     state: "default"
     Debian: "python-mysqldb"
