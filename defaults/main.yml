@@ -202,3 +202,12 @@ aspects_common_packages:
   pythonmysqldb:
     state: "default"
     Debian: "python-mysqldb"
+    RedHat: "MySQL-python"
+  mysqlserver:
+    state: "default"
+    Debian: "mysql-server"
+    RedHat: "mysql-server"
+  mysqlclient:
+    state: "default"
+    Debian: "mysql-client"
+    RedHat: "mysql"
