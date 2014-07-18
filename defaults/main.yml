@@ -214,3 +214,6 @@ aspects_common_packages:
     state: "default"
     Debian: "mysql-client"
     RedHat: "mysql"
+  php5pspell:
+    state: "default"
+    Debian: "php5-pspell"
