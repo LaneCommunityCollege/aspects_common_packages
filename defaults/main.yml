@@ -202,6 +202,7 @@ aspects_common_packages:
   snmpddevel:
     state: "default"
     RedHat: "net-snmp-devel"
+    Debian: "libsnmp-dev"
   pythonmysqldb:
     state: "default"
     Debian: "python-mysqldb"
@@ -217,3 +218,28 @@ aspects_common_packages:
   php5pspell:
     state: "default"
     Debian: "php5-pspell"
+  apache2mpmworker:
+    state: "default"
+    Debian: "apache2-mpm-worker"
+  apache2:
+    state: "default"
+    Debian: "apache2"
+    RedHat: "httpd"
+  apache2mpmevent:
+    state: "default"
+    Debian: "apache2-mpm-event"
+  apache2mpmprefork:
+    state: "default"
+    Debian: "apache2-mpm-prefork"
+  unzip:
+    state: "default"
+    Debian: "unzip"
+    RedHat: "unzip"
+  tomcat6:
+    state: "default"
+    Debian: "tomcat6"
+    RedHat: "tomcat6"
+  nginx:
+    state: "default"
+    Debian: "nginx"
+
