@@ -242,4 +242,7 @@ aspects_common_packages:
   nginx:
     state: "default"
     Debian: "nginx"
+  jpackageutils:
+    state: "default"
+    RedHat: "jpackage-utils"
 
